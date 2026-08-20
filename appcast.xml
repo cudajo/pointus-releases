@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
+    <channel>
+        <title>Pointus Changelog</title>
+        <item>
+            <title>Version 1.3.4</title>
+            <pubDate>Thu, 20 Aug 2026 12:22:43 +0200</pubDate>
+            <sparkle:version>36</sparkle:version>
+            <sparkle:shortVersionString>1.3.4</sparkle:shortVersionString>
+            <enclosure url="https://github.com/cudajo/pointus-releases/releases/download/v1.3.4/pointus_installer.dmg"
+                       length="90608449"
+                       type="application/octet-stream"
+                       sparkle:edSignature="tJsnvQjrMIUli4y6xlCAQFtLZM9bcwvb77qW36Fh37qLEZqdzGCN8e/mpvzkCPJUeI/h+sUkHr0HkvnADuHICA==" />
+        </item>
+    </channel>
+</rss>
