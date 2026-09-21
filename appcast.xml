@@ -3,23 +3,24 @@
     <channel>
         <title>Pointus Changelog</title>
         <item>
-            <title>Version 1.3.24</title>
-            <pubDate>Fri, 18 Sep 2026 15:46:14 +0200</pubDate>
-            <sparkle:version>56</sparkle:version>
-            <sparkle:shortVersionString>1.3.24</sparkle:shortVersionString>
+            <title>Version 1.3.25</title>
+            <pubDate>Mon, 21 Sep 2026 22:53:41 +0200</pubDate>
+            <sparkle:version>57</sparkle:version>
+            <sparkle:shortVersionString>1.3.25</sparkle:shortVersionString>
             <description><![CDATA[
-<h2>What's new?</h2>
+<h2>Release notes</h2>
 <ul>
     <li>NEW! Pop art visualizer.</li>
+    <li>NEW! Auto launch at login.</li>
     <li>UI refinements.</li>
     <li>Presets configuration adjustments.</li>
     <li>Bug fixes and performance improvements.</li>
 </ul>
             ]]></description>
-            <enclosure url="https://github.com/cudajo/pointus-releases/releases/download/v1.3.24/pointus_installer.dmg"
-                       length="103623229"
+            <enclosure url="https://github.com/cudajo/pointus-releases/releases/download/v1.3.25/pointus_installer.dmg"
+                       length="103602733"
                        type="application/octet-stream"
-                       sparkle:edSignature="PKwfw22ddKM0GW8Hd/VJw+iXspkM7fIk+qQZDusge9ew/JW+1YVrWxM2H5AXx3Burddpvk2w9LpmCa9fv5b/AQ==" />
+                       sparkle:edSignature="8Gs+5tLvTAWOcK+f6yeKrpGX7dn8X5iS4S8Ih/v/X8s/XgeuQ4XyqSYjwT3Szg7urUuJS+lpQU9H6bg776yeDQ==" />
         </item>
     </channel>
 </rss>
