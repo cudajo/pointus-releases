@@ -3,10 +3,10 @@
     <channel>
         <title>Pointus Changelog</title>
         <item>
-            <title>Version 1.3.25</title>
-            <pubDate>Mon, 21 Sep 2026 22:53:41 +0200</pubDate>
-            <sparkle:version>57</sparkle:version>
-            <sparkle:shortVersionString>1.3.25</sparkle:shortVersionString>
+            <title>Version 1.3.26</title>
+            <pubDate>Tue, 22 Sep 2026 20:03:31 +0200</pubDate>
+            <sparkle:version>58</sparkle:version>
+            <sparkle:shortVersionString>1.3.26</sparkle:shortVersionString>
             <description><![CDATA[
 <h2>Release notes</h2>
 <ul>
@@ -17,10 +17,10 @@
     <li>Bug fixes and performance improvements.</li>
 </ul>
             ]]></description>
-            <enclosure url="https://github.com/cudajo/pointus-releases/releases/download/v1.3.25/pointus_installer.dmg"
-                       length="103602733"
+            <enclosure url="https://github.com/cudajo/pointus-releases/releases/download/v1.3.26/pointus_installer.dmg"
+                       length="103778340"
                        type="application/octet-stream"
-                       sparkle:edSignature="8Gs+5tLvTAWOcK+f6yeKrpGX7dn8X5iS4S8Ih/v/X8s/XgeuQ4XyqSYjwT3Szg7urUuJS+lpQU9H6bg776yeDQ==" />
+                       sparkle:edSignature="Re0OctyGurmwTKxrqiS/CP2xARS2P5kKZup5u4pDuxOgQNsS8tuSSMolff0wrlTAg2oJC/5bfNaeqC7MjsBRAQ==" />
         </item>
     </channel>
 </rss>
