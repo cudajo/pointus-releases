@@ -3,24 +3,277 @@
     <channel>
         <title>Pointus Changelog</title>
         <item>
-            <title>Version 1.4.0</title>
-            <pubDate>Thu, 24 Sep 2026 22:21:18 +0200</pubDate>
-            <sparkle:version>61</sparkle:version>
-            <sparkle:shortVersionString>1.4.0</sparkle:shortVersionString>
+            <title>Version 1.5.11</title>
+            <pubDate>Mon, 09 Nov 2026 09:49:01 +0100</pubDate>
+            <sparkle:version>73</sparkle:version>
+            <sparkle:shortVersionString>1.5.11</sparkle:shortVersionString>
             <description><![CDATA[
-<h2>Release notes</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Release Notes</title>
+    <style>
+        :root {
+          color-scheme: light dark;
+          --text: #1d1d1f;
+          --muted: #6e6e73;
+          --border: #d2d2d7;
+          --badge-new-bg: #e1f5fe;
+          --badge-new-text: #0277bd;
+          --badge-fix-bg: #fbe9e7;
+          --badge-fix-text: #d84315;
+        }
+
+        @media (prefers-color-scheme: dark) {
+          :root {
+            --text: #f5f5f7;
+            --muted: #a1a1a6;
+            --border: #424245;
+            --badge-new-bg: #01344d;
+            --badge-new-text: #4fc3f7;
+            --badge-fix-bg: #431b12;
+            --badge-fix-text: #ff8a65;
+          }
+        }
+
+        body {
+          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+          font-size: 13px;
+          line-height: 1.45;
+          color: var(--text);
+          margin: 12px 14px;
+          padding: 0;
+          -webkit-font-smoothing: antialiased;
+        }
+
+        /* Release header */
+        .release-header {
+          display: flex;
+          justify-content: space-between;
+          align-items: baseline;
+          border-bottom: 1px solid var(--border);
+          padding-bottom: 6px;
+          margin-bottom: 10px;
+        }
+
+        .version {
+          font-size: 15px;
+          font-weight: 600;
+          letter-spacing: -0.01em;
+        }
+
+        .date {
+          font-size: 12px;
+          color: var(--muted);
+        }
+
+        /* Category groups */
+        h3 {
+          font-size: 11px;
+          text-transform: uppercase;
+          letter-spacing: 0.05em;
+          color: var(--muted);
+          margin: 10px 0 4px 0;
+          font-weight: 600;
+        }
+
+        /* List layout */
+        ul {
+          list-style: none;
+          padding-left: 0;
+          margin: 0;
+        }
+
+        li {
+          margin-bottom: 6px;
+          position: relative;
+          padding-left: 14px;
+        }
+
+        /* Standard bullet marker */
+        li::before {
+          content: "•";
+          position: absolute;
+          left: 0;
+          color: var(--muted);
+        }
+
+        /* Expandable item via details/summary */
+        details {
+          display: inline;
+        }
+
+        summary {
+          cursor: pointer;
+          display: inline;
+          list-style: none; /* removes default arrow to maintain bullet flow */
+        }
+
+        summary::-webkit-details-marker {
+          display: none;
+        }
+
+        summary .title {
+          //font-weight: 500;
+        }
+
+        summary .toggle-hint {
+          font-size: 11px;
+          color: var(--muted);
+          margin-left: 4px;
+        }
+
+        details[open] .toggle-hint {
+          display: none;
+        }
+
+        .details-content {
+          margin-top: 4px;
+          padding: 4px 8px;
+          background: rgba(127, 127, 127, 0.08);
+          border-left: 2px solid var(--border);
+          border-radius: 0 4px 4px 0;
+          color: var(--muted);
+          font-size: 12px;
+          line-height: 1.4;
+        }
+
+        code {
+          font-family: ui-monospace, Menlo, Monaco, monospace;
+          font-size: 11.5px;
+          padding: 1px 4px;
+          background: rgba(127, 127, 127, 0.12);
+          border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+
+<!--header class="release-header">
+    <span class="version">Version 2.4.0</span>
+    <span class="date">May 18, 2026</span>
+</header-->
+<h3>New</h3>
 <ul>
-    <li>NEW! Pop art visualizer.</li>
-    <li>NEW! Auto launch at login.</li>
+
+    <!-- Expandable bullet with deep details -->
+    <li>
+        <details>
+            <summary>
+                <span class="title">Magic pointer (AI pointer mode)</span>
+                <span class="toggle-hint">(+)</span>
+            </summary>
+            <div class="details-content">
+                New pointer mode!<br>
+                Bring the AI of Magic pointer to your desktop. Activated with a wiggle of your mouse pointer or keyboard shortcut, select an area of your screen to be analyzed by any of the supported AI providers and models.<br>
+                Currently supporting Google Gemini, OpenAI, Anthropic Claude, xAI Grok (using your own API keys), together with Ollama (local) and simple Apple Vision.
+            </div>
+        </details>
+    </li>
+    <li>
+        <details>
+            <summary>
+                <span class="title">Magic wand (mouse follower)</span>
+                <span class="toggle-hint">(+)</span>
+            </summary>
+            <div class="details-content">
+                Express your inner magician, princess or fairy - feel the magic by choosing between different magic wand styles that replace or accompanies your mouse pointer wherever it goes.
+            </div>
+        </details>
+    </li>
+    <li>
+        <details>
+            <summary>
+                <span class="title">Pop art (visualizer effect)</span>
+                <span class="toggle-hint">(+)</span>
+            </summary>
+            <div class="details-content">
+                Add pop art explosions to your mouse clicks in different colors on the screen, paired with the obligatory POP!, ZAP!, BOOM! (or whatever you may prefer).
+            </div>
+        </details>
+    </li>
+    <li>
+        <details>
+            <summary>
+                <span class="title">Falling leaves (visualizer effect)</span>
+                <span class="toggle-hint">(+)</span>
+            </summary>
+            <div class="details-content">
+                Let falling leaves give your screen that special autumn feeling whenever you click your mouse. Several different styles, colors and sizes are available. Let the leaves be impacted by the wind breeze, or just slowly fall to the ground and pile up in the bottom of the screen before slowly fading away.
+            </div>
+        </details>
+    </li>
+    <!-- Simple standard bullet -->
+    <li></li>
+    <li></li>
+
+    <!--li><details>
+        <summary>
+            <span class="title">Seasons background effect</span>
+            <span class="toggle-hint">(+)</span>
+        </summary>
+        <div class="details-content">
+            XXX Spring, Summer, Autumn, Winter...
+        </div>
+    </details>
+        </li-->
+    <li><details>
+        <summary>
+            <span class="title">Halloween (background effect)</span>
+            <span class="toggle-hint">(+)</span>
+        </summary>
+        <div class="details-content">
+            Give your screen a themed overlay with gnarled tree trunks, kreeping fog, spiderwebs, bats and drifting ghosts. Not as scary as it may sound. ;-)
+        </div>
+    </details></li>
+    <li><details>
+        <summary>
+            <span class="title">Auto launch at login.</span>
+            <span class="toggle-hint">(+)</span>
+        </summary>
+        <div class="details-content">
+            Pointus may now auto launch at login (configurable).
+        </div>
+    </details></li>
+    <li><details>
+        <summary>
+            <span class="title">User presets</span>
+            <span class="toggle-hint">(+)</span>
+        </summary>
+        <div class="details-content">
+            We have now added 3 additional slots in the preset menu for completely new user customized presets. The already available presets are of course still fully user-configurable as always.
+        </div>
+    </details></li>
+</ul>
+
+<h3>Updates & fixes</h3>
+<ul>
+    <li>Aquarium preset (press "Revert to default" in the preset if not working as expected).</li>
     <li>UI refinements.</li>
     <li>Presets configuration adjustments.</li>
-    <li>Bug fixes and performance improvements.</li>
+    <li>Minor bug fixes and performance improvements.</li>
+    <!--li>
+        <details>
+            <summary>
+                <span class="title">Title</span>
+                <span class="toggle-hint">(details...)</span>
+            </summary>
+            <div class="details-content">
+                Details...
+            </div>
+        </details>
+    </li-->
 </ul>
+
+</body>
+</html>
             ]]></description>
-            <enclosure url="https://github.com/cudajo/pointus-releases/releases/download/v1.4.0/pointus_installer.dmg"
-                       length="103788675"
+            <enclosure url="https://github.com/cudajo/pointus-releases/releases/download/v1.5.11/pointus_installer.dmg"
+                       length="105507050"
                        type="application/octet-stream"
-                       sparkle:edSignature="Qun12bnwFX8ful668udVz+vhtkRSNjox9PW+l8ntFeIOJEm9sxpoXrSN8WZBEPvWGGZx+74T6maqzT1PMZDBAQ==" />
+                       sparkle:edSignature="djzR2O2D4IfAmywfsRGWuyTHpk5S8ccL/Tns/kL7JWLMVRfBOYI16NBI8BMZm2vheYMOBo+J3WLkGZWbWo+GCw==" />
         </item>
     </channel>
 </rss>
